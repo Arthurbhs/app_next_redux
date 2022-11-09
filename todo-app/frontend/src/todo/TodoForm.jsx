@@ -9,8 +9,10 @@ const TodoForm = props => (
         </Grid>
 
         <Grid cols='12 3 2'>
-            {/* Mudamos o nome da propriedade style para btnStyle, pois o Lint reclamava e essa é a melhor maneira de contornar esse problema */}
+           
             <IconButton btnStyle='primary' icon='plus' onClick={props.handleAdd}></IconButton>
+            <IconButton Style='info' icon='search'
+            onClick={props.handleSearch}></IconButton>
         </Grid>
     </div>
 )
